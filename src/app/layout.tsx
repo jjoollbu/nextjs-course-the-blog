@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 import "./globals.css";
-import { Container } from "@/components/Container";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Header />
 
           {children}
-          
+
           <Footer />
         </Container>
       </body>
