@@ -18,9 +18,7 @@ export default async function HomePage() {
         <PostsList />
       </Suspense>
 
-      <footer>
-        <h1 className="text-6xl font-bold text-center py-8">Footer</h1>
-      </footer>
+
     </Container>
   );
 }
