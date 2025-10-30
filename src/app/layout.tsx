@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Container } from "@/components/Container";
+import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "The blog - Este é um blog com Next.js",
@@ -13,7 +15,12 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <Container>
+          <Header />
+          {children}
+        </Container>
+      </body>
     </html>
   );
 }
