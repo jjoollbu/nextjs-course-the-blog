@@ -1,4 +1,4 @@
-'use client";';
+'use client';
 
 import ErrorMessage from "@/components/ErrorMessage";
 import { useEffect } from "react";
